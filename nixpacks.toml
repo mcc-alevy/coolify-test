@@ -1,2 +1,5 @@
 [phases.setup]
 nixpkgsArchive = '50a648d88844b1e3a302d2b5d70cf54a25b47253'
+
+[variables]
+NIXPACKS_PKGS = 'unixodbc-dev'
