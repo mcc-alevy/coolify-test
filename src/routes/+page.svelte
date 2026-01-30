@@ -1,5 +1,10 @@
 <script lang="ts">
-  import { getRandomNumber } from './test.remote';
+  import { getRandomNumber, logConnection } from './test.remote';
+
+  async function handleClick() {
+    const connection = await logConnection();
+    console.log(connection);
+  }
 </script>
 
 <h1>Welcome to SvelteKit on Coolify</h1>
@@ -9,4 +14,10 @@
 
 <button onclick={() => getRandomNumber().refresh()}>
   New Number
+</button>
+
+<br>
+
+<button onclick={handleClick}>
+  Log Connection
 </button>
