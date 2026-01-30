@@ -6,6 +6,7 @@
 
 <svelte:head>
 	<link rel="icon" href={favicon} />
+	<title>Coolify SvelteKit App</title>
 </svelte:head>
 
 {@render children()}
