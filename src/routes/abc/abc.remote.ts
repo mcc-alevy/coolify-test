@@ -14,5 +14,7 @@ export const getAbcCodes = query(async () => {
 
   const results = await connection.query('SELECT Id AS id, Name AS name, ProductLineId AS productLine FROM Groups');
 
+  await connection.close();
+
   return v.parse(abcCodeSchema, results);
 });
