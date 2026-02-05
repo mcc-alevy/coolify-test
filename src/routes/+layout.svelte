@@ -9,4 +9,11 @@
 	<title>Coolify SvelteKit App</title>
 </svelte:head>
 
+<nav>
+	<ul>
+		<li><a href="/">Home</a></li>
+		<li><a href="/abc">ABC Codes</a></li>
+	</ul>
+</nav>
+
 {@render children()}
